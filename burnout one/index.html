@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroRevive AI</title>
+
+    <link rel="stylesheet" href="landing.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">NeuroRevive AI</div>
+</header>
+
+<section class="hero">
+    <canvas id="bg"></canvas>
+
+    <div class="content">
+        <h1 class="title">AI Cognitive Performance Optimizer</h1>
+        <p class="subtitle">Enhance focus. Eliminate burnout. Unlock peak mental clarity.</p>
+        <button onclick="startAssessment()">Start Assessment</button>
+    </div>
+</section>
+
+<!-- ✅ FIXED: use landing.js instead of main.js -->
+<script src="landing.js"></script>
+<!-- 🔥 GLOBAL NAVBAR (WORKS ON ALL PAGES) -->
+<div style="
+  position:fixed;
+  top:10px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  gap:10px;
+  z-index:999;
+">
+
+  <button onclick="goPage('index.html')">Home</button>
+  <button onclick="goPage('dashboard.html')">Dashboard</button>
+  <button onclick="goPage('face.html')">Face</button>
+  <button onclick="goPage('focus.html')">Focus</button>
+  <button onclick="goPage('recovery.html')">Recovery</button>
+  <button onclick="goPage('history.html')">History</button>
+
+</div>
+
+<script>
+function goPage(page){
+  window.location.href = page;
+}
+</script>
+
+<style>
+button{
+  padding:8px 14px;
+  border-radius:8px;
+  border:1px solid #00f0ff;
+  background:rgba(0,0,0,0.4);
+  color:#00f0ff;
+  cursor:pointer;
+  backdrop-filter:blur(6px);
+  box-shadow:0 0 10px #00f0ff;
+  transition:0.2s;
+}
+
+button:hover{
+  background:#00f0ff;
+  color:black;
+}
+</style>
+
+</body>
+</html>
